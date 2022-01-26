@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body  class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 flex flex-col h-full">
+    <div class="mx-auto my-auto text-neutral-50 font-bold text-4xl">Calculator</div>
+    <div id="keypad" class="w-[512px] p-6 grid grid-cols-4 gap-3 mx-auto my-auto bg-zinc-800 rounded-lg drop-shadow-lg font-mono text-2xl justify-center">
+        <input type="text" name="eqn" id="eqn" class="rounded-md h-[64px] col-span-4 p-4">
+        <button class="rounded-md h-[64px] bg-neutral-50">7</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">8</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">9</button>
+        <button class="rounded-md h-[64px] bg-cyan-500">*</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">4</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">5</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">6</button>
+        <button class="rounded-md h-[64px] bg-cyan-500">+</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">1</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">2</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">3</button>
+        <button class="rounded-md h-[64px] bg-cyan-500">-</button>
+        <button class="rounded-md h-[64px] bg-neutral-50">0</button>
+        <button class="rounded-md h-[64px] bg-cyan-500">.</button>
+        <button class="rounded-md h-[64px] bg-cyan-500">/</button>
+        <button class="rounded-md h-[64px] bg-orange-400">=</button>
+        <button class="rounded-md h-[64px] bg-cyan-500 col-span-4">Clear</button>
+    </div>  
+    <span class="justify-center self-center text-lg text-slate-100 font-mono my-6">Made with 💖 by <span class="font-bold">Vaibhav T S</span></span>
+    <script src="./calc.js"></script>
+</body>
+</html>
