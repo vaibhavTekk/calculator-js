@@ -15,6 +15,9 @@ keypad.addEventListener('click', e =>{
     else if (e.target.innerText == "Clear"){
         eqnbox.value = ""
     }
+    else if (e.target.innerText == "Backspace"){
+        eqnbox.value = eqnbox.value.slice(0,-1)
+    }
     else if((e.target.innerText).length === 1){
         eqnbox.value += (e.target.innerText);
     }
