@@ -7,7 +7,6 @@ const evaluate = () => {
         const abc = JSON.stringify(eqnbox.value);
         return eval(JSON.parse(abc));
     } catch (error) {
-        console.log("Please enter a valid expression");
         alert.classList.remove("opacity-0");
         alert.classList.add("opacity-100");
         setTimeout(()=>{
