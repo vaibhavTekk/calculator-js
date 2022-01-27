@@ -7,7 +7,11 @@
     <link rel="shortcut icon" href="./img/calculator.ico" type="image/x-icon">
     <title>Calculator</title>
 </head>
-<body  class="font-mono bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 flex flex-col h-full">
+<body  class="font-mono bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 ">
+    <div id="alert" role="alert" class="p-4 absolute text-white bg-red-600 rounded-lg w-[340px] md:w-[512px] my-5 mx-6 z-20 opacity-0 transition duration-150 ease-in-out">
+        <p class="text-xl font-bold">Please Enter a Valid Expression !!!</p>
+      </div>
+    <div class="flex flex-col h-full">
     <div class="mx-auto my-auto text-neutral-50 font-bold text-4xl">Calculator</div>
     <div id="keypad" class="w-[340px] md:w-[512px] p-6 grid grid-cols-4 gap-3 mx-auto my-auto bg-zinc-800 rounded-lg drop-shadow-lg font-mono text-2xl justify-center">
         <input type="text" name="eqn" id="eqn" class="rounded-md h-[64px] col-span-4 p-4">
@@ -31,6 +35,7 @@
         <button class="rounded-md h-[64px] bg-cyan-500 col-span-2">Backspace</button>
     </div>  
     <span class="justify-center self-center text-lg text-slate-100 font-mono my-6">Made with 💖 by <span class="font-bold">Vaibhav T S</span></span>
+    </div>
     <script src="./calc.js"></script>
 </body>
 </html>

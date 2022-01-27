@@ -1,9 +1,22 @@
 const eqnbox = document.querySelector("#eqn");
 const keypad = document.querySelector("#keypad");
+const alert = document.querySelector("#alert");
 
 const evaluate = () => {
-    const abc = JSON.stringify(eqnbox.value);
-    return eval(JSON.parse(abc));
+    try {
+        const abc = JSON.stringify(eqnbox.value);
+        return eval(JSON.parse(abc));
+    } catch (error) {
+        console.log("Please enter a valid expression");
+        alert.classList.remove("opacity-0");
+        alert.classList.add("opacity-100");
+        setTimeout(()=>{
+            alert.classList.remove("opacity-100");
+            alert.classList.add("opacity-0");
+        },2000);
+        return "";
+    }
+    
 };
 
 
